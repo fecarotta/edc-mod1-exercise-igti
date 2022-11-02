@@ -4,7 +4,7 @@ provider "aws" {
 
 #Centralizar o arquivo de controle de estado do terraform
 terraform {
-    beckend "s3" {
+    backend "s3" {
         bucket = "terraform-state-igti-fecarotta"
         key    = "state/igti/edc/mod1/terraform.tfstate"
         region = "us-east-2"
